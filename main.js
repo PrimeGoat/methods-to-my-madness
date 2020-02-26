@@ -85,6 +85,7 @@ function trimStart(string) {
 
 function trimEnd(string) {
   let i;
+  
   for(i = string.length - 1; i >= 0; i--) {
     if(string[i] != ' ') {
       break;

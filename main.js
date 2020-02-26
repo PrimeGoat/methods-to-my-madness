@@ -94,7 +94,6 @@ function trimEnd(string) {
   return slice(string, 0, i + 1);
 }
 
-console.log('"' + trimEnd("heh  ") + '"');
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/

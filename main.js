@@ -89,11 +89,10 @@ function trimEnd(string) {
 
   for(let i = string.length - 1; i >= 0; i--) {
     if(string[i] != ' ' || doneEnd) {
-      out.push(string[i]);
+      out.unshift(string[i]);
       doneEnd = 1;
     }
   }
-  out.reverse();
 
   return join(out);
 }

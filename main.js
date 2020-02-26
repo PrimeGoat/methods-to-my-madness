@@ -84,19 +84,17 @@ function trimStart(string) {
 }
 
 function trimEnd(string) {
-  let out = [];
-  let doneEnd = 0;
-
-  for(let i = string.length - 1; i >= 0; i--) {
-    if(string[i] != ' ' || doneEnd) {
-      out.unshift(string[i]);
-      doneEnd = 1;
+  let i;
+  for(i = string.length - 1; i >= 0; i--) {
+    if(string[i] != ' ') {
+      break;
     }
   }
 
-  return join(out);
+  return slice(string, 0, i + 1);
 }
 
+console.log('"' + trimEnd("heh  ") + '"');
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/

@@ -85,12 +85,14 @@ function trimStart(string) {
 
 function trimEnd(string) {
   let i;
-
+  
   for(i = string.length - 1; i >= 0; i--) {
     if(string[i] != ' ') {
-      return slice(string, 0, i + 1);
+      break;
     }
   }
+
+  return slice(string, 0, i + 1);
 }
 
 /*********************************

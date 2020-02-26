@@ -92,6 +92,7 @@ function trimEnd(string) {
     }
   }
 
+  // Can't return from loop because zero-length strings won't be looped through
   return slice(string, 0, i + 1);
 }
 
